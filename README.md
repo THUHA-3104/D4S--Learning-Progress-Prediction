@@ -36,22 +36,50 @@ Dự án tập trung vào ba mục tiêu cốt lõi:
 ## Cài đặt (Installation)
 ### Bước 1: Tải mã nguồn dự án
 ```bash
-https://github.com/THUHA-3104/D4S
+git clone https://github.com/THUHA-3104/D4S.git
+cd D4S
+
 ```
 ### Bước 2: Cài đặt thư viện 
-```pip install -r requirements.txt
+```md
+```bash
+pip install -r requirements.txt
 ```
 ---
 
-## How to run 
+## Cách chạy
 ### Bước 1: Chuẩn bị dữ liệu
-Đặt các file sau vào thư mục:
+Đặt các file sau vào thư mục `data/`:
 - admission.csv
 - academic_records.csv
 - test.csv
 - sample_submission.csv
 
-### Bước 2: Chạy toàn bộ pipeline
+### Bước 2: Tiền xử lý dữ liệu
 ```bash
-python pipeline.py
+python pythondata/fixdata.py
+```
+### Bước 3: Huấn luyện mô hình 
+```bash
+python pythondata/train.py
+```
+### Bước 4: Dự đoán 
+```bash
+python pythondata/final.py
+```
 
+### Bước 5: Hiển thị kết quả
+Các biểu đồ phân tích, kết quả (Feature Importance, SHAP) được lưu tại thư mục `result/`
+
+---
+
+## Cấu trúc dự án (Project structure)
+.
+├── pythondata/
+│   ├── fixdata.py      # Tiền xử lý dữ liệu
+│   ├── train.py        # Huấn luyện mô hình
+│   └── final.py      # Dự đoán
+├── data/
+├── result/
+├── requirements.txt
+└── README.md
