@@ -73,13 +73,20 @@ Các biểu đồ phân tích, kết quả (Feature Importance, SHAP) được l
 
 ---
 
-## Cấu trúc dự án (Project structure)
+## Cấu trúc dự án (Project Structure)
+```text
 .
 ├── pythondata/
 │   ├── fixdata.py      # Tiền xử lý dữ liệu
 │   ├── train.py        # Huấn luyện mô hình
-│   └── final.py      # Dự đoán
-├── data/
-├── result/
+│   └── final.py        # Dự đoán
+├── data/               # Dữ liệu đầu vào
+├── outputs/            # Kết quả dự đoán & biểu đồ
 ├── requirements.txt
 └── README.md
+
+```
+### Đóng góp 
+- Phan Thi Đinh
+- Trieu Phuong Anh
+- Nguyen Thi Thu Ha
