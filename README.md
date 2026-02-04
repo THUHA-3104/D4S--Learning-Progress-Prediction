@@ -81,7 +81,7 @@ Các biểu đồ phân tích, kết quả (Feature Importance, SHAP) được l
 │   ├── train.py        # Huấn luyện mô hình
 │   └── final.py        # Dự đoán
 ├── data/               # Dữ liệu đầu vào
-├── outputs/            # Kết quả dự đoán & biểu đồ
+├── result/            # Kết quả dự đoán & biểu đồ
 ├── requirements.txt
 └── README.md
 
